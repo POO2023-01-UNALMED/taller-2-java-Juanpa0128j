@@ -20,11 +20,11 @@ public class Auto {
 	}
 
 	String verificarIntegridad() {	
-		String PS = "Las piezas no son originales";
+		String PS = "Auto original";
 		for (int i = 0; i < asientos.length; i++) {
 			if(asientos[i] != null) {
-				if (this.registro == asientos[i].registro && this.registro == motor.registro && motor.registro == asientos[i].registro)
-					PS = "Auto original";
+				if (this.registro != asientos[i].registro || this.registro != motor.registro || motor.registro != asientos[i].registro)
+					PS = "Las piezas no son originales";
 				}
 			}
 		return PS;
