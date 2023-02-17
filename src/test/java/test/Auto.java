@@ -8,11 +8,6 @@ public class Auto {
 	int registro;
 	static int cantidadCreados;
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-	
 	public int cantidadAsientos() {
 		return (this.asientos.length);
 		
