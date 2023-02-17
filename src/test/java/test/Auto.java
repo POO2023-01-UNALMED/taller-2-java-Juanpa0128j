@@ -10,7 +10,8 @@ public class Auto {
 	static int cantidadCreados;
 	
 	int cantidadAsientos() {
-		return (asientos.length);
+		int length = asientos.length;
+		return (length);
 		
 	}
 	
